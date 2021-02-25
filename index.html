@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="menu.js"></script>
+  <link rel="styleshet" type="text/css" href="css/bootstrap-grid.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="container">
+      <div class="logo"><img src="img/DD.png"></div>
+      <nav class="nav helvetica">
+        <ul>
+          <li><a class="animation" href="*">HOME</a></li>
+          <li><a class="animation" href="*">WORKS</a></li>
+          <li><a class="animation" href="*">CONTATO</a></li>
+        </ul>
+      </nav>
+      
+      <img class="menu" src="img/menu.png">
+  </header>
+  <!----<span class="iconify" data-icon="logos:whatsapp" data-inline="false" width="40px"></span>  <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" width="35px"></span></div>-->
+  <div class="container-section">
+    <div class="my-text">
+      <h2 class="h2">FRONT-END<br><span style="color: #8335B2">UI & UX DESIGN</span></h2>
+      <p class="p">Olá! Me chamo Diego.<br>Estou em busca de <b>oportunidades</b> na área de <i>Front-end / Ux design</i>.<br> Trabalhei com infraestrutura / suporte de TI mas sempre gostei de criar layouts e definitivamente estou migrando de área.</p>
+      <p>
+        <a href="*"><span class="iconify" data-icon="logos:linkedin-icon" data-inline="false"></span></a>
+        <a href="*"><span class="iconify" data-icon="logos:whatsapp" data-inline="false"><a href="*"></span></a>
+        </p> 
+        
+        
+    </div>
+    <div class="mov-content"><img src="img/space.png" class=></div>
+  </div>
+  <section class="content-info">
+    <div class="tooltip">
+      <img src="img/html.png" class="content1 ">
+      <div class="tooltip-text">Site Institucional<br>Landing Page<br>E-mail Marketing</div>
+    </div>
+
+    <div class="tooltip">
+      <img src="img/office.png" class="content2 ">
+      <div class="tooltip-text">Tabela Dinâmica<br>Gráficos Interativos<br>Automatização (Macro)<br>BI básico<br>Configuração de E-mail<br>Criação de Slides</div>
+    </div>
+
+    <div class="tooltip">
+      <img src="img/light.png" class="content3 ">
+      <div class="tooltip-text">Identidade Visual<br>Manipulação de Imagem<br>Ilustração<br>Mídia Digital</div>
+    </div>
+
+    <div class="tooltip">
+      <img src="img/sql.png" class="content4">
+      <div class="tooltip-text">Básico da linguagem Sql</div>
+    </div>
+
+    <div class="tooltip">
+      <img src="img/soft.png" class="content5">
+      <div class="tooltip-text">Comunicação<br>Colaboração<br>Pensamento Criativo<br>Positividade<br>Relacionamento Interpessoal<br>Visão Crítica</div>
+    </div>
+  </section>
+  </div>
+  </div>
+  </div>
+  <div class="wave-container">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path id="wave" d="" />
+    </svg>
+  </div>
+  <div class="bg">
+    <div class="gallery">
+      <div class="gallery_prev"></div>
+      <div class="gallery_next"></div>
+      <div class="gallery__stream">
+        <div class="gallery__item bg-1"></div>
+        <div class="gallery__item bg-2"></div>
+        <div class="gallery__item bg-3"></div>
+        <div class="gallery__item bg-4"></div>
+        <div class="gallery__item bg-5"></div>
+        <div class="gallery__item bg-6"></div>
+        <div class="gallery__item bg-7"></div>
+      </div>
+    </div>
+    <img class="only-mob" src="img/port2.png">
+    <span class="prototype"><center><i>Este site é apenas um protótipo  © Diego Dias</i>.</center></span>
+  </div>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var stream = document.querySelector('.gallery__stream');
+    var items = document.querySelectorAll('.gallery__item');
+
+    var prev = document.querySelector('.gallery_prev');
+    prev.addEventListener('click', function () {
+      stream.insertBefore(items[items.length - 1], items[0]);
+      items = document.querySelectorAll('.gallery__item');
+    });
+
+    var next = document.querySelector('.gallery_next');
+    next.addEventListener('click', function () {
+      stream.appendChild(items[0]);
+      items = document.querySelectorAll('.gallery__item');
+    });
+
+  });
+</script>
+<script>
+  $('#wave').wavify({
+    height: 57,
+    bones: 4,
+    amplitude: 80,
+    color: '#bc43b0',
+    speed: .100
+  });
+</script>
+
+<script>$('.menu').on('click touchstart', function () {
+  $('html').toggleClass('menu-active');
+});</script>
