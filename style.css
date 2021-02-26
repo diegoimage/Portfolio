@@ -433,7 +433,7 @@ svg {
 }
 
 .only-mob {
-  display: none;
+display: none;
 }
 
 /*MEDIA QUERIE*/
@@ -445,7 +445,7 @@ svg {
     overflow: hidden;
     left: 0;
     width: 200px;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     margin: 0 auto;
   }
