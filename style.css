@@ -466,11 +466,17 @@ svg {
   }
 
   .menu {
+    transition: 1s;
+ background-image: url(img/menu.png);
+ background-repeat: no-repeat;
+ width: 25px;
+ height: 19px;
+    padding: 8px 8px;
     z-index: 999;
     cursor: pointer;
     width: 30px;
     position: absolute;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 70%;
     display: inline;
   }
@@ -481,7 +487,8 @@ svg {
   }
   .menu {
     transform: translateX(0);
-    transition: 1s;
+    transition: 0.5s;
+    margin-top: 20px;
   }
 
   .menu-active .nav {
@@ -489,7 +496,13 @@ svg {
   }
 
   .menu-active .menu {
-    transform: translateX(0px);
+    transform: translateX(0);
+    background-repeat: no-repeat;
+    background-image: url(img/x.png);
+    width: 25px;
+    height: 19px;
+    transition: 1s;
+    
   }
 
   .container-section {
@@ -514,9 +527,6 @@ svg {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-  }
-  .menu {
-    padding: 10px 10px;
   }
   .only-mob {
     display: block;
