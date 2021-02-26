@@ -440,7 +440,7 @@ display: none;
 @media screen and (max-width: 700px) {
   .nav {
     z-index: 999;
-    background-color: #8000ff;
+    background-color: #bc43b0;
     position: fixed;
     overflow: hidden;
     left: 0;
@@ -448,6 +448,8 @@ display: none;
     height: 100vh;
     position: absolute;
     margin: 0 auto;
+    transform: translateX(-270px);
+    
   }
 
   .nav ul {
@@ -471,7 +473,6 @@ display: none;
     background-repeat: no-repeat;
     width: 25px;
     height: 19px;
-
     z-index: 999;
     cursor: pointer;
     width: 30px;
@@ -483,7 +484,7 @@ display: none;
 
   .nav {
     transform: translateX(-270px);
-    transition: 1s;
+   
   }
   .menu {
     transform: translateX(0);
@@ -493,6 +494,7 @@ display: none;
 
   .menu-active .nav {
     transform: translateX(0);
+    transition: 0.5s ;
   }
 
   .menu-active .menu {
@@ -501,7 +503,7 @@ display: none;
     background-image: url(img/x.png);
     width: 25px;
     height: 19px;
-    transition: 1s;
+    transition: 0.5s;
   }
 
   .container-section {
