@@ -515,18 +515,25 @@ svg {
     display: flex;
     justify-content: center;
   }
-
+  .menu {
+    padding: 10px 10px;
+  }
   .only-mob {
     display: block;
     margin-top: -40px;
   }
-
+  .wave-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+  }
   .my-text {
     padding: 35px 0px;
     margin-top: -20px;
   }
   .content-info {
-    margin-top: 0px;
+    margin-top: -50px;
   }
   .content-info > div {
     margin: 20px;
