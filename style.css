@@ -467,11 +467,11 @@ svg {
 
   .menu {
     transition: 1s;
- background-image: url(img/menu.png);
- background-repeat: no-repeat;
- width: 25px;
- height: 19px;
-    padding: 8px 8px;
+    background-image: url(img/menu.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 19px;
+
     z-index: 999;
     cursor: pointer;
     width: 30px;
@@ -502,7 +502,6 @@ svg {
     width: 25px;
     height: 19px;
     transition: 1s;
-    
   }
 
   .container-section {
