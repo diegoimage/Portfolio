@@ -145,6 +145,14 @@ nav a {
   height: 66px;
   transition: 1s;
 }
+
+.content1 {
+  cursor: pointer;
+  filter: grayscale(100%);
+  width: 113px;
+  height: 66px;
+  transition: 1s;
+}
 .content1:hover {
   filter: grayscale(0%);
   transition: 1s;
@@ -162,6 +170,7 @@ nav a {
 }
 
 .content3 {
+  margin-top: 10px;
   filter: grayscale(100%);
   width: 173px;
   height: 50px;
@@ -185,9 +194,10 @@ nav a {
 }
 
 .content5 {
+  margin-top: 15px;
   filter: grayscale(100%);
-  width: 79px;
-  height: 55px;
+  width: 139px;
+  height: 35px;
   transition: 1s;
 }
 .content5:hover {
