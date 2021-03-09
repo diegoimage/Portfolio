@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
@@ -21,7 +22,7 @@
       <nav class="nav helvetica">
         <ul>
           <li><a class="animation" href="index.html">HOME</a></li>
-          <li><a class="animation" onclick="alert1()" href="index.html">WORKS</a></li>
+          <li><a class="animation" id="btn1" onClick="reply_click(this.id) href="index.html">WORKS</a></li>
           <li><a class="animation" href="http://wa.me/5521972887277">CONTATO</a></li>
         </ul>
       </nav>
@@ -100,10 +101,9 @@ https://www.linkedin.com/in/diego-menezes-dias-a1bb92a1"><span class="iconify" d
   </div>
 
   <script>
-    function alert1()
-    {
-    alert("Estou atualizando este portfólio, logo estarei adicionando meus trabalhos! :)");
-    }
+   $("#btn1").click(function() {
+    swal("Estou construindo meu portfólio.", "Em breve estarei postando meus trabalhos e projetos!");
+});
     </script>
 
 </html>
