@@ -14,6 +14,7 @@ img {
   height: 30px;
 }
 .prototype {
+  line-height: 50px;
   color: white;
   font-size: 1em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -38,8 +39,8 @@ img {
 }
 
 .logo {
-  height: 45px;
-  width: 37px;
+  height: 32px;
+  width: 166px;
   margin-top: 10px;
   overflow: hidden;
 }
@@ -443,11 +444,21 @@ svg {
 }
 
 .only-mob {
-display: none;
+  display: none;
 }
 
 /*MEDIA QUERIE*/
 @media screen and (max-width: 700px) {
+
+  .logo-min{
+height: 28px;
+width: 145px;
+margin-top: 15px;
+filter: opacity(15%);
+  }
+  .prototype {
+    font-size: 15px;
+  }
   .nav {
     z-index: 999;
     background-color: #bc43b0;
@@ -459,7 +470,6 @@ display: none;
     position: absolute;
     margin: 0 auto;
     transform: translateX(-270px);
-    
   }
 
   .nav ul {
@@ -494,7 +504,6 @@ display: none;
 
   .nav {
     transform: translateX(-270px);
-   
   }
   .menu {
     transform: translateX(0);
@@ -504,7 +513,7 @@ display: none;
 
   .menu-active .nav {
     transform: translateX(0);
-    transition: 0.5s ;
+    transition: 0.5s;
   }
 
   .menu-active .menu {
@@ -526,6 +535,7 @@ display: none;
 
   .gallery {
     display: none;
+    https: ; //diegomdias.github.io/portfolio/
   }
   .mov-content {
     display: none;
@@ -541,7 +551,7 @@ display: none;
   }
   .only-mob {
     display: block;
-    margin-top: -40px;
+    margin-top: -55px;
   }
   .wave-container {
     display: flex;
