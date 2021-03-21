@@ -39,16 +39,10 @@ img {
 }
 
 .logo {
-  height: 32px;
-  width: 166px;
+  height: 70px;
+  width: 87px;
   margin-top: 10px;
   overflow: hidden;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 nav ul li {
@@ -114,18 +108,11 @@ nav a {
 
 /*INFOS*/
 .bg {
-  /*
-  background: linear-gradient(
-      265.52deg,
-      rgba(192, 40, 245, 0.4012) 46.36%,
-      #bc43b0 103.29%,
-      rgba(136, 0, 0, 0) 111.74%
-    ),
-    #6b10a0;*/
+  text-align: center;
   background-color: #bc43b0;
   width: 100%;
 }
-.content-info {
+.container-info {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -135,16 +122,8 @@ nav a {
   padding: 20px 0px;
 }
 
-.content-info > div {
+.container-info > div {
   margin: 30px;
-}
-
-.content1 {
-  cursor: pointer;
-  filter: grayscale(100%);
-  width: 113px;
-  height: 66px;
-  transition: 1s;
 }
 
 .content1 {
@@ -257,97 +236,6 @@ svg {
 
 /*GALERIA*/
 
-.gallery_next {
-  margin-left: 620px;
-  z-index: 999;
-  position: absolute;
-  height: 295px;
-  width: 245px;
-  background: #ffffff;
-  border-radius: 10px;
-  filter: opacity(0%);
-  cursor: pointer;
-}
-
-.gallery_prev {
-  margin-left: -93px;
-  z-index: 999;
-  position: absolute;
-  height: 295px;
-  width: 245px;
-  background: #ffffff;
-  border-radius: 10px;
-  filter: opacity(0%);
-  cursor: pointer;
-}
-
-.gallery {
-  padding: 100px;
-  width: 768px;
-  height: 300px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.gallery__stream {
-  position: relative;
-  top: 40%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 100%;
-}
-
-.gallery__item {
-  position: absolute;
-  width: 60%;
-  height: 120%;
-  transition: 1s all ease;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-
-  border-radius: 5px;
-}
-
-.gallery__item:nth-child(1) {
-  left: 0;
-  z-index: 1;
-  transform: translateX(-100%) scale(0.8);
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-.gallery__item:nth-child(2) {
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  transform: translateX(-50%) scale(0.8);
-  filter: grayscale(100%);
-}
-
-.gallery__item:nth-child(3) {
-  left: 50%;
-  z-index: 4;
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.65);
-  transform: translateX(-50%) scale(1);
-}
-
-.gallery__item:nth-child(4) {
-  cursor: pointer;
-  left: 100%;
-  z-index: 2;
-  transform: translateX(-50%) scale(0.8);
-  filter: grayscale(100%);
-}
-
-.gallery__item:nth-child(n + 5) {
-  left: 100%;
-  z-index: 1;
-  transform: scale(0.8);
-  filter: grayscale(100%);
-}
-/*MENU ACRIVE*/
-
 /* Cursos */
 .container-cursos {
   width: 70%;
@@ -367,55 +255,6 @@ svg {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-}
-/* Backgrounds */
-
-.bg-1 {
-  background-image: url(img/social.jpg);
-}
-
-.bg-2 {
-  background-image: url(img/tribe.jpg);
-}
-
-.bg-3 {
-  background-image: url(img/port.jpg);
-}
-
-.bg-4 {
-  background-image: url(img/figma.jpg);
-}
-
-.bg-5 {
-  background-image: url(img/web.jpg);
-}
-
-.bg-6 {
-  background-image: url(img/mani.jpg);
-}
-
-.bg-7 {
-  background-image: url(img/respon.jpg);
-}
-
-/* Controles */
-.gallery__prev,
-.gallery__next {
-  position: absolute;
-  top: 50%;
-  z-index: 4;
-  width: 50%;
-  height: 100%;
-  transform: translateX(-50%) translateY(-50%) scale(0.8);
-  cursor: pointer;
-}
-
-.gallery__prev {
-  left: 0;
-}
-
-.gallery__next {
-  left: 100%;
 }
 
 /*SVG*/
@@ -449,16 +288,12 @@ svg {
 
 /*MEDIA QUERIE*/
 @media screen and (max-width: 700px) {
+  .logo-min {
+    height: 55px;
+    width: 68px;
+    margin-top: 15px;
+  }
 
-  .logo-min{
-height: 28px;
-width: 145px;
-margin-top: 15px;
-filter: opacity(15%);
-  }
-  .prototype {
-    font-size: 15px;
-  }
   .nav {
     z-index: 999;
     background-color: #bc43b0;
@@ -533,10 +368,6 @@ filter: opacity(15%);
     justify-content: space-between;
   }
 
-  .gallery {
-    display: none;
-    https: ; //diegomdias.github.io/portfolio/
-  }
   .mov-content {
     display: none;
   }
@@ -561,12 +392,6 @@ filter: opacity(15%);
   }
   .my-text {
     padding: 35px 0px;
-    margin-top: -20px;
-  }
-  .content-info {
     margin-top: 0px;
-  }
-  .content-info > div {
-    margin: 20px;
   }
 }
