@@ -15,34 +15,35 @@
 </head>
 
 <body>
-
   <header>
     <div class="container">
-      <div class="logo logo-min"><img src="img/DD.png"></div>
+      <div class="logo logo-min"><a href="index.html"><img src="img/DD2.png"></a>
+      </div>
       <nav class="nav helvetica">
         <ul>
           <li><a class="animation" href="index.html">HOME</a></li>
-          <li><a class="animation" id="btn1" onClick="reply_click(this.id) href="index.html">WORKS</a></li>
+          <li><a class="animation" id="btn1" onClick="reply_click(this.id) href=" index.html">WORKS</a></li>
           <li><a class="animation" href="http://wa.me/5521972887277">CONTATO</a></li>
         </ul>
       </nav>
-
       <span class="menu"></span>
   </header>
-  <!----<span class="iconify" data-icon="logos:whatsapp" data-inline="false" width="40px"></span>  <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" width="35px"></span></div>-->
   <div class="container-section">
     <div class="my-text">
       <h2 class="h2">FRONT-END<br><span style="color: #8335B2">UI & UX DESIGN</span></h2>
-      <p class="p">Olá! Me chamo Diego.<br>Estou em busca de <b>oportunidades</b> na área de <i>Front-end / Ux design</i>.<br> Trabalhei com infraestrutura / suporte de TI mas sempre tive a paixão em criar layouts e observar como os usuários interagem com o sistema, e estou em busca de começar minha carreira na área.</p>
+      <p class="p">Olá! Me chamo Diego.<br>Estou em busca de <b>oportunidades</b> na área de <i>Front-end / Ux design</i>.<br>Trabalhei com infraestrutura / suporte de TI mas sempre tive a paixão em criar layouts e observar como os usuários interagem com o sistema, e estou em busca de começar minha carreira na área.</p>
       <p>
         <a href="
 https://www.linkedin.com/in/diego-menezes-dias-a1bb92a1"><span class="iconify" data-icon="logos:linkedin-icon" data-inline="false"></span></a>
-        <a href="http://wa.me/5521972887277"><span class="iconify" data-icon="logos:whatsapp" data-inline="false">/span></a>
+
+        <a href="http://wa.me/5521972887277"><span class="iconify" data-icon="logos:whatsapp" data-inline="false"></a>
+        
+          <a href="https://github.com/diegomdias"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></a>
       </p>
     </div>
     <div class="mov-content"><img src="img/space.png" class=></div>
   </div>
-  <section class="content-info">
+  <section class="container-info">
     <div class="tooltip">
       <img src="img/html.png" class="content1 ">
       <div class="tooltip-text">Site Institucional<br>Landing Page<br>E-mail Marketing</div>
@@ -76,66 +77,32 @@ https://www.linkedin.com/in/diego-menezes-dias-a1bb92a1"><span class="iconify" d
       <path id="wave" d="" />
     </svg>
   </div>
-  <!-- TESTE DE SLIDE EM JS, LOGO IREI ATUALIZAR
-  <div class="bg">
-    <div class="gallery">
-      <div class="gallery_prev"></div>
-      <div class="gallery_next"></div>
-      <div class="gallery__stream">
-        <div class="gallery__item bg-1"></div>
-        <div class="gallery__item bg-2"></div>
-        <div class="gallery__item bg-3"></div>
-        <div class="gallery__item bg-4"></div>
-        <div class="gallery__item bg-5"></div>
-        <div class="gallery__item bg-6"></div>
-        <div class="gallery__item bg-7"></div>
-      </div>
-    </div>
-  -->
   <img class="only-mob" src="img/port2.png">
-  <div class="bg">
+  <footer class="bg">
     <span class="prototype">
-      <center><i>Este site é um protótipo e logo será atualizado. © Diego Dias</i>.</center>
+      Este site é um protótipo e logo será atualizado. © Diego Dias
     </span>
-  </div>
-  </div>
+  </footer>
 
+  <!--JAVASCRIPT-->
   <script>
-   $("#btn1").click(function() {
-    swal("Estou construindo meu portfólio.", "Em breve estarei postando meus trabalhos e projetos!");
-});
-    </script>
+    $("#btn1").click(function () {
+      swal("Estou construindo meu portfólio.", "Em breve estarei postando meus trabalhos e projetos!");
+    });
+
+    $('#wave').wavify({
+      height: 57,
+      bones: 4,
+      amplitude: 80,
+      color: '#bc43b0',
+      speed: .100
+    });
+
+    $('.menu').on('click', function () {
+      $('html').toggleClass('menu-active');
+    });
+  </script>
+
+</body>
 
 </html>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var stream = document.querySelector('.gallery__stream');
-    var items = document.querySelectorAll('.gallery__item');
-
-    var prev = document.querySelector('.gallery_prev');
-    prev.addEventListener('click', function () {
-      stream.insertBefore(items[items.length - 1], items[0]);
-      items = document.querySelectorAll('.gallery__item');
-    });
-
-    var next = document.querySelector('.gallery_next');
-    next.addEventListener('click', function () {
-      stream.appendChild(items[0]);
-      items = document.querySelectorAll('.gallery__item');
-    });
-
-  });
-</script>
-<script>
-  $('#wave').wavify({
-    height: 57,
-    bones: 4,
-    amplitude: 80,
-    color: '#bc43b0',
-    speed: .100
-  });
-</script>
-
-<script>$('.menu').on('click', function () {
-    $('html').toggleClass('menu-active');
-  });</script>
